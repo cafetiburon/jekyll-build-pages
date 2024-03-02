@@ -28,7 +28,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build
-        uses: actions/jekyll-build-pages@v1
+        uses: cafetiburon/jekyll-build-pages@v1
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
   deploy:
@@ -48,7 +48,7 @@ To write to a different destination directory, match the inputs of both the `jek
 ```yaml
 steps:
   - name: Build
-    uses: actions/jekyll-build-pages@v1
+    uses: cafetiburon/jekyll-build-pages@v1
     with:
       destination: "./output"
   - name: Upload artifact
@@ -93,10 +93,10 @@ In order to release a new version of this Action:
 The scripts and documentation in this project are released under the [MIT License](LICENSE).
 
 <!-- references -->
-[release-list]: https://github.com/actions/jekyll-build-pages/releases
+[release-list]: https://github.com/cafetiburon/jekyll-build-pages/releases
 [draft-release]: .github/workflows/draft-release.yml
 [docker-publish]: .github/workflows/docker-publish.yml
 [release]: .github/workflows/release.yml
-[docker-publish-workflow-runs]: https://github.com/actions/jekyll-build-pages/actions/workflows/docker-publish.yml
-[release-workflow-runs]: https://github.com/actions/jekyll-build-pages/actions/workflows/release.yml
-[action.yml]: https://github.com/actions/jekyll-build-pages/blob/649f5d3c2b2462620c8945f034200e431ceddd29/action.yml#LL31C54-L31C60
+[docker-publish-workflow-runs]: https://github.com/cafetiburon/jekyll-build-pages/actions/workflows/docker-publish.yml
+[release-workflow-runs]: https://github.com/cafetiburon/jekyll-build-pages/actions/workflows/release.yml
+[action.yml]: https://github.com/cafetiburon/jekyll-build-pages/blob/649f5d3c2b2462620c8945f034200e431ceddd29/action.yml#LL31C54-L31C60
