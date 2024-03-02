@@ -15,6 +15,7 @@ env:
 
 permissions:
   contents: write
+  packages: read
 
 jobs:
   verify_release:
